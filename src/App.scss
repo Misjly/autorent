@@ -1,0 +1,53 @@
+$font-body: Arial, Helvetica, sans-serif;
+$font-title: 'Courier New', Courier, monospace;
+
+$color-oxford-blue: rgba(12, 27, 51, 0.9);
+$color-alice-blue: #ebf2fa;
+$color-platinum: #e5e2dc;
+$color-tropical-indigo: #7d83ff;
+$color-dark-cyan: #368f8b;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-orange: #ffa62b;
+$color-gray: #747578;
+
+body {
+    font-family: $font-body;
+    background-color: $color-alice-blue !important;
+}
+
+h1, h2, h3 {
+    font-family: $font-title;
+}
+
+.site-footer {
+    background-color: $color-oxford-blue;
+    padding: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.navbar-brand {
+    max-width: 4rem;
+    margin-right: 2rem;
+}
+
+.navbar-dark {
+    background-color: $color-black-transparent;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.btn-link {
+    color: $color-alice-blue !important;
+}
+
+.row-content {
+    min-height: 25rem;
+    width: 100%;
+    background-color: $color-alice-blue !important;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 1rem 5rem  $color-oxford-blue;
+    margin: 1rem;
+}
