@@ -3,12 +3,9 @@ $font-title: 'Courier New', Courier, monospace;
 
 $color-oxford-blue: rgba(12, 27, 51, 0.9);
 $color-alice-blue: #ebf2fa;
-$color-platinum: #e5e2dc;
-$color-tropical-indigo: #7d83ff;
-$color-dark-cyan: #368f8b;
 $color-black-transparent: rgba(0, 0, 0, 0.5);
-$color-orange: #ffa62b;
-$color-gray: #747578;
+$color-cool-gray: #8380b6;
+$color-cool-gray-transparent: rgba(131, 128, 182, 0.8);
 
 body {
     font-family: $font-body;
@@ -20,7 +17,7 @@ h1, h2, h3 {
 }
 
 .site-footer {
-    background-color: $color-oxford-blue;
+    background-color: $color-cool-gray;
     padding: 2rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -28,11 +25,10 @@ h1, h2, h3 {
 
 .navbar-brand {
     max-width: 4rem;
-    margin-right: 2rem;
 }
 
 .navbar-dark {
-    background-color: $color-black-transparent;
+    background-color: $color-cool-gray-transparent;
     margin-bottom: 2rem;
     padding: 2rem;
     border-bottom-left-radius: 5rem;

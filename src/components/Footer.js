@@ -1,5 +1,4 @@
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -24,7 +23,7 @@ const Footer = () => {
                             className='btn btn-link'
                             href='mailto:notreal@notreal.co'
                         >
-                            <i className='fa fa-envelope-o' /> someadress@gmail.co
+                            <i className='fa fa-envelope-o' /> someadress@gmail.com
                         </a>
                     </Col>
                 </Row>
