@@ -5,10 +5,15 @@ const Footer = () => {
         <footer className='site-footer'>
             <Container>
                 <Row>
-                    <Col className='sm-8'>
-
+                    <Col sm={{size: 2}} className='mx-0 px-0'>
+                        <a
+                            role='button'
+                            className='btn btn-link'
+                            href='/'>
+                                <i className='fa fa-user pe-1'/>Support
+                        </a>
                     </Col>
-                    <Col sm={{size: 2}} className='text-center ms-0 ps-0'>
+                    <Col sm={{size: 2}} className='mx-0 px-0'>
                         <a
                             role='button'
                             className='btn btn-link'

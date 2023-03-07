@@ -31,12 +31,13 @@ const UserLoginForm = () => {
 
     return (
         <>
-            <span className='navbar-text ml-auto'>
+            <span className='navbar-text'>
                 {currentUser ? (
                     <div
-                        className='ms-3'
-                        style={{ width: '4rem', height: '4rem' }}>
+                        className='mb-3'
+                        style={{ width: '3rem', height: '3rem'}}>
                         <img
+                            className='avatar'
                             src={currentUser.avatar}
                             alt={'user'}
                             style={{ width: '100%', height: '100%' }}
@@ -44,6 +45,7 @@ const UserLoginForm = () => {
                     </div>
                 ) : (
                     <Button
+                        className='mb-2'
                         outline
                         onClick={() => setLoginModalOpen(true)}
                         style={{ color: 'white', border: '1px solid white' }}

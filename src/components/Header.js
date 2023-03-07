@@ -15,7 +15,7 @@ const Header = () => {
 
     return (
         <Navbar dark sticky='top' expand='md'>
-            <NavbarBrand className='me-5' href='/'>
+            <NavbarBrand className='me-5 brand' href='/'>
                 <h1 className='mt-1'>Auto Rent</h1>
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>

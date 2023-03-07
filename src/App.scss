@@ -1,9 +1,10 @@
 $font-body: Arial, Helvetica, sans-serif;
 $font-title: 'Courier New', Courier, monospace;
+$font-card: Arial, Helvetica, sans-serif;
 
 $color-oxford-blue: rgba(12, 27, 51, 0.9);
 $color-alice-blue: #ebf2fa;
-$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-black-transparent: rgba(0, 0, 0, 0.3);
 $color-cool-gray: #8380b6;
 $color-cool-gray-transparent: rgba(131, 128, 182, 0.8);
 
@@ -23,16 +24,13 @@ h1, h2, h3 {
     border-top-left-radius: 1rem;
 }
 
-.navbar-brand {
-    max-width: 4rem;
-}
-
 .navbar-dark {
-    background-color: $color-cool-gray-transparent;
+    aspect-ratio: 1200/150;
+    background-size: cover;
+    background-image: url('./app/assets/svg/layered-waves.svg');
+
     margin-bottom: 2rem;
     padding: 2rem;
-    border-bottom-left-radius: 5rem;
-    border-bottom-right-radius: 5rem;
 }
 
 .btn-link {
@@ -46,4 +44,33 @@ h1, h2, h3 {
     border-radius: 0.5rem;
     box-shadow: 1rem 1rem 5rem  $color-oxford-blue;
     margin: 1rem;
+}
+
+a .card-text {
+    color: $color-oxford-blue !important;
+    position: absolute;
+    align-self: center;
+    font-weight: 700;
+    font-size: clamp(.5rem, 3vw, 1rem);
+    font-family: $font-card;
+    white-space:pre-wrap;
+    text-shadow: 0 0 .1rem $color-oxford-blue;
+}
+.card-img {
+    opacity: 0.5;
+}
+
+.card-content {
+    justify-content: center;
+}
+
+.brand {
+    background-color: $color-black-transparent;
+    border-radius: 20% 70% / 70% 20%;
+    box-shadow: 0 0 1rem $color-black-transparent;
+    padding: 0 1rem 0 1rem;
+}
+
+.avatar {
+    border-radius: 100% !important;
 }
