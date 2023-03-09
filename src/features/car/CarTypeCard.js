@@ -7,7 +7,7 @@ const CarTypeCard = ({ carType }) => {
     return (
         <>
             <Link to={`${name}`}>
-                <Card className='card-content'>
+                <Card className='card-container'>
                     <CardImg
                         className='card-img'
                         top

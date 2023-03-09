@@ -43,15 +43,34 @@ a .card-text {
   font-size: clamp(0.5rem, 3vw, 1rem);
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-wrap;
-  text-shadow: 0 0 0.1rem rgba(12, 27, 51, 0.9);
 }
 
 .card-img {
   opacity: 0.5;
+  transition: 1s;
 }
 
-.card-content {
+.card-container {
   justify-content: center;
+  margin: 0.5rem;
+}
+
+.card-container:hover > .card-img {
+  transition: opacity 0.7s;
+  opacity: 1;
+  transform: scale(110%);
+  box-shadow: 0 1rem 1rem #8380b6;
+}
+
+.card-container:hover > .card-text {
+  transition: font-size 0.5s;
+  font-size: large;
+  text-shadow: 0 0 0.1rem #ebf2fa;
+}
+
+a:hover {
+  border-color: #ebf2fa;
+  box-shadow: 0 0.3rem 2rem #ebf2fa;
 }
 
 .brand {

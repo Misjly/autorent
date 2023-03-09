@@ -54,14 +54,33 @@ a .card-text {
     font-size: clamp(.5rem, 3vw, 1rem);
     font-family: $font-card;
     white-space:pre-wrap;
-    text-shadow: 0 0 .1rem $color-oxford-blue;
 }
 .card-img {
     opacity: 0.5;
+    transition: 1s;
 }
 
-.card-content {
+.card-container {
     justify-content: center;
+    margin: .5rem;
+}
+
+.card-container:hover > .card-img {
+    transition: opacity .7s;
+    opacity: 1;
+    transform: scale(110%);
+    box-shadow: 0 1rem 1rem $color-cool-gray;
+}
+
+.card-container:hover > .card-text {
+    transition: font-size .5s;
+    font-size: large;
+    text-shadow: 0 0 0.1rem $color-alice-blue;
+}
+
+a:hover {
+    border-color: $color-alice-blue;
+    box-shadow: 0 .3rem 2rem $color-alice-blue;
 }
 
 .brand {
