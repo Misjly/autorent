@@ -15,6 +15,11 @@ body {
 
 h1, h2, h3 {
     font-family: $font-title;
+    text-shadow: .5rem .5rem .3rem $color-black-transparent;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 .site-footer {
@@ -31,6 +36,7 @@ h1, h2, h3 {
 
     margin-bottom: 2rem;
     padding: 2rem;
+    opacity: 0.9;
 }
 
 .btn-link {
@@ -69,7 +75,7 @@ a .card-text {
     transition: opacity .7s;
     opacity: 1;
     transform: scale(110%);
-    box-shadow: 0 1rem 1rem $color-cool-gray;
+    box-shadow: 0 1rem 3rem $color-cool-gray;
 }
 
 .card-container:hover > .card-text {
@@ -80,16 +86,40 @@ a .card-text {
 
 a:hover {
     border-color: $color-alice-blue;
-    box-shadow: 0 .3rem 2rem $color-alice-blue;
+    box-shadow: 0 0 .5rem $color-alice-blue;
+}
+
+.nav-link {
+    border-radius: 1rem;
 }
 
 .brand {
     background-color: $color-black-transparent;
     border-radius: 20% 70% / 70% 20%;
-    box-shadow: 0 0 1rem $color-black-transparent;
     padding: 0 1rem 0 1rem;
+}
+
+.brand:hover {
+    box-shadow: 0 0 .5rem $color-black-transparent;
 }
 
 .avatar {
     border-radius: 100% !important;
+}
+
+.fake-button {
+    background-color: $color-alice-blue !important;
+    color: $color-cool-gray !important;
+    border-color: $color-alice-blue !important;
+}
+
+.car-form-button {
+    color: $color-cool-gray-transparent !important;
+    border-color: $color-oxford-blue !important;
+    border-radius: .3rem;
+    background-color: $color-alice-blue !important;
+}
+
+.submit-button {
+    background-color: $color-cool-gray !important;
 }

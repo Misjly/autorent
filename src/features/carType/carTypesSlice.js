@@ -2,16 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 import { TYPES } from "../../app/shared/TYPES";
 
 const initialState = {
-    types: TYPES
+    carTypes: TYPES
 }
 
 const carTypesSlice = createSlice({
-    name: 'carTypes',
+    name: 'types',
     initialState
 });
 
 export const carTypesReducer = carTypesSlice.reducer;
 
 export const selectAllCarTypes = (state) => {
-    return state.carTypes.types;
+    return state.types.carTypes;
 }

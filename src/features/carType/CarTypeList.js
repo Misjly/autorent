@@ -7,7 +7,7 @@ const CarTypeList = () => {
     const carTypes = useSelector(selectAllCarTypes);
 
     return (
-        <Row>
+        <Row className='py-5'>
             {
                 carTypes.map(carType => {
                     return (
