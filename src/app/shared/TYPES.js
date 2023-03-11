@@ -1,9 +1,9 @@
-import SUV from '../assets/img/SUV.jpg';
-import Minivan from '../assets/img/Minivan.jpg';
-import PremiumClass from '../assets/img/PremiumClass.jpg';
-import Convertible from '../assets/img/Convertible.jpg';
-import Pickup from '../assets/img/Pickup.jpg';
-import EconomyClass from '../assets/img/EconomyClass.jpg';
+import SUV from '../assets/img/types/SUV.jpg';
+import Minivan from '../assets/img/types/Minivan.jpg';
+import PremiumClass from '../assets/img/types/PremiumClass.jpg';
+import Convertible from '../assets/img/types/Convertible.jpg';
+import Pickup from '../assets/img/types/Pickup.jpg';
+import EconomyClass from '../assets/img/types/EconomyClass.jpg';
 
 export const TYPES = [
     {

@@ -75,7 +75,7 @@ a .card-text {
     transition: opacity .7s;
     opacity: 1;
     transform: scale(110%);
-    box-shadow: 0 1rem 3rem $color-cool-gray;
+    box-shadow: 0 .3rem .7rem $color-cool-gray;
 }
 
 .card-container:hover > .card-text {
@@ -122,4 +122,8 @@ a:hover {
 
 .submit-button {
     background-color: $color-cool-gray !important;
+}
+
+.submit-link {
+    color: $color-alice-blue;
 }

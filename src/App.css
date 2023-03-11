@@ -65,7 +65,7 @@ a .card-text {
   transition: opacity 0.7s;
   opacity: 1;
   transform: scale(110%);
-  box-shadow: 0 1rem 3rem #8380b6;
+  box-shadow: 0 0.3rem 0.7rem #8380b6;
 }
 
 .card-container:hover > .card-text {
@@ -112,4 +112,8 @@ a:hover {
 
 .submit-button {
   background-color: #8380b6 !important;
+}
+
+.submit-link {
+  color: #ebf2fa;
 }/*# sourceMappingURL=App.css.map */
