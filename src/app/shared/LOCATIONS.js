@@ -41,6 +41,7 @@ export const LOCATIONS = [
     'South Carolina',
     'South Dakota',
     'Tennessee',
+    'Texas',
     'Utah',
     'Vermont',
     'Virginia',

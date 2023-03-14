@@ -8,7 +8,6 @@ export const CARS = [
         type: 'SUV',
         img: NissanRogue,
         price: 50,
-        electric: false,
         location: 'Texas',
         reserved: null
     },
@@ -18,7 +17,6 @@ export const CARS = [
         type: 'Pickup',
         img: FordF150Raptor,
         price: 65,
-        electric: false,
         location: 'Utah',
         reserved: null
     }

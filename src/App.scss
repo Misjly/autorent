@@ -61,7 +61,7 @@ a .card-text {
     font-family: $font-card;
     white-space:pre-wrap;
 }
-.card-img {
+#cartype-card-img {
     opacity: 0.5;
     transition: 1s;
 }
@@ -71,7 +71,7 @@ a .card-text {
     margin: .5rem;
 }
 
-.card-container:hover > .card-img {
+.card-container:hover > #cartype-card-img {
     transition: opacity .7s;
     opacity: 1;
     transform: scale(110%);
@@ -126,4 +126,9 @@ a:hover {
 
 .submit-link {
     color: $color-alice-blue;
+}
+
+.car-card-text {
+    text-align: center;
+    vertical-align: middle;
 }

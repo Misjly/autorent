@@ -21,9 +21,14 @@ const Header = () => {
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto col-md-9' navbar>
-                    <NavItem>
+                    <NavItem className='me-2'>
                         <NavLink className='nav-link col-2 col-md-12 offset-md-3 offset-lg-0' to='/'>
                             <i className='fa fa-home fa-lg' /> Home
+                        </NavLink>
+                    </NavItem>
+                    <NavItem className='me-2'>
+                        <NavLink className='nav-link col-2 col-md-12 offset-md-3 offset-lg-0' to='/search'>
+                            <i className='fa fa-search fa-lg' /> Search
                         </NavLink>
                     </NavItem>
                 </Nav>

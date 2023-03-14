@@ -51,7 +51,7 @@ a .card-text {
   white-space: pre-wrap;
 }
 
-.card-img {
+#cartype-card-img {
   opacity: 0.5;
   transition: 1s;
 }
@@ -61,7 +61,7 @@ a .card-text {
   margin: 0.5rem;
 }
 
-.card-container:hover > .card-img {
+.card-container:hover > #cartype-card-img {
   transition: opacity 0.7s;
   opacity: 1;
   transform: scale(110%);
@@ -116,4 +116,9 @@ a:hover {
 
 .submit-link {
   color: #ebf2fa;
+}
+
+.car-card-text {
+  text-align: center;
+  vertical-align: middle;
 }/*# sourceMappingURL=App.css.map */

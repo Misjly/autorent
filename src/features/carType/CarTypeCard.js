@@ -3,24 +3,23 @@ import { Card, CardImg, CardText } from "reactstrap";
 
 const CarTypeCard = ({ carType }) => {
     const { name, img } = carType;
-
     return (
-        <>
-            <Link to={`${name}`}>
-                <Card className='card-container'>
-                    <CardImg
-                        className='card-img'
-                        top
-                        fluid="true"
-                        src={img}
-                        alt={name}
-                    />
-                    <CardText className='card-text'>
-                        {name}
-                    </CardText>
-                </Card>
-            </Link>
-        </>
+        <Link to='/search'
+            state={name}>
+            <Card className='card-container'>
+                 <CardImg
+                    id='cartype-card-img'
+                    className='card-img'
+                    top
+                    fluid="true"
+                    src={img}
+                    alt={name}
+                />
+                <CardText className='card-text'>
+                    {name}
+                </CardText>
+            </Card>
+        </Link>
     );
 }
 
