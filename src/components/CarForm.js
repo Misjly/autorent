@@ -9,7 +9,7 @@ const CarForm = () => {
     const locations = useSelector(selectAllLocations);
     const handleSubmit = (values) => {
         navigate('/search', {state: {
-            pickUpLocation: values.pickUpLocation,
+            location: values.pickUpLocation,
             dropOffLocation: values.dropOffLocation,
             pickUpDate: values.pickUpDate,
             dropOffDate: values.dropOffDate,

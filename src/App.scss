@@ -130,5 +130,32 @@ a:hover {
 
 .car-card-text {
     text-align: center;
-    vertical-align: middle;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.car-card {
+    border-style: solid;
+    border-width: .1rem;
+    border-color: $color-oxford-blue;
+}
+
+.filter-form {
+    display: flex;
+    justify-content: center;
+    border-left: .1rem $color-oxford-blue inset;
+    margin-left: 5rem;
+}
+
+.car-filter {
+    padding: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    border-width: .1rem;
+    border-color: $color-oxford-blue;
+    border-style: inset;
+}
+
+h5 {
+    margin:0;
+    padding: 0;
 }

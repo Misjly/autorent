@@ -9,10 +9,9 @@ const CarList = (props) => {
     return (
         <Row className='py-5'>
             {
-                props.state ?
-                props.state.pickUpLocation ?
+                (props.state.location.length && props.state.carType.length) ?
                 cars.map(car => {
-                    if(car.location === props.state.pickUpLocation) {
+                    if(props.state.location.includes(car.location) && props.state.carType.includes(car.type)) {
                         return (
                             <Col key={car.id} className='col-12'>
                                 <CarCard car={car}/>
@@ -20,8 +19,19 @@ const CarList = (props) => {
                         )
                     }
                 }) : 
+                (props.state.location && props.state.location.length) ?
                 cars.map(car => {
-                    if(car.type === props.state) {
+                    if(props.state.location.includes(car.location)) {
+                        return (
+                            <Col key={car.id} className='col-12'>
+                                <CarCard car={car}/>
+                            </Col>
+                        )
+                    }
+                }) : 
+                (props.state.carType && props.state.carType.length) ?
+                cars.map(car => {
+                    if(props.state.carType.includes(car.type)) {
                         return (
                             <Col key={car.id} className='col-12'>
                                 <CarCard car={car}/>

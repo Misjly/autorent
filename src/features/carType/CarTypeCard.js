@@ -5,7 +5,7 @@ const CarTypeCard = ({ carType }) => {
     const { name, img } = carType;
     return (
         <Link to='/search'
-            state={name}>
+            state={{carType: name}}>
             <Card className='card-container'>
                  <CardImg
                     id='cartype-card-img'
