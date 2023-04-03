@@ -1,7 +1,7 @@
 import { Button, Card, CardImg, Col, Row } from "reactstrap"
 
 const CarCard = ({car}) => {
-    const { img, name, type, price } = car;
+    const { img, name, type, price, location } = car;
 
     return (
         <Row className='car-card mb-5'>
@@ -10,12 +10,13 @@ const CarCard = ({car}) => {
                     <CardImg src={img} alt={name} className='car-card-img'/>
                 </Card>
             </Col>
-            <Col>
+            <Col className='car-card-info'>
                 <div className='car-card-text'>
-                    <div>{type}</div>
-                    <div>{name}</div>
-                    <div>{price}$ per day</div>
-                    <Button type='submit' className='submit-button col-8'>Rent</Button>
+                    <div className='divider-first'>{type}</div>
+                    <div className='divider'>{name}</div>
+                    <div className='divider'>{price}$ per day</div>
+                    <div className='divider-last'>{location}</div>
+                    <Button type='submit' className='submit-button col-8 my-5'>Rent</Button>
                 </div>
             </Col>
         </Row>

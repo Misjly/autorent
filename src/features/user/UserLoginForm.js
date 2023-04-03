@@ -74,7 +74,7 @@ const UserLoginForm = () => {
                                         {(msg) => <p className='text-danger'>{msg}</p>}
                                     </ErrorMessage>
                                 </FormGroup>
-                                <Button type='submit' color='primary'>Login</Button>
+                                <Button type='submit' color='primary' className='submit-button'>Login</Button>
                             </Form>
                         </Formik>
                     </ModalBody>

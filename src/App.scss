@@ -20,6 +20,7 @@ h1, h2, h3 {
 
 a {
     text-decoration: none !important;
+    transition: 1s ease-out !important;
 }
 
 .site-footer {
@@ -97,10 +98,11 @@ a:hover {
     background-color: $color-black-transparent;
     border-radius: 20% 70% / 70% 20%;
     padding: 0 1rem 0 1rem;
+    transition: 1s ease-out;
 }
 
 .brand:hover {
-    box-shadow: 0 0 .5rem $color-black-transparent;
+    box-shadow: 0 0 1.5rem $color-alice-blue;
 }
 
 .avatar {
@@ -121,7 +123,15 @@ a:hover {
 }
 
 .submit-button {
-    background-color: $color-cool-gray !important;
+    background-color: $color-oxford-blue !important;
+    box-shadow: 0 0 1rem $color-black-transparent !important;
+    border-style: hidden !important;
+    transition: .3s ease-out !important;
+}
+
+.submit-button:hover {
+    box-shadow: 0 0 .7rem $color-oxford-blue !important;
+    transform: scale(102%);
 }
 
 .submit-link {
@@ -137,13 +147,19 @@ a:hover {
     border-style: solid;
     border-width: .1rem;
     border-color: $color-oxford-blue;
+    box-shadow: 0 0 .5rem $color-oxford-blue;
 }
 
 .filter-form {
     display: flex;
     justify-content: center;
-    border-left: .1rem $color-oxford-blue inset;
-    margin-left: 5rem;
+}
+
+@media only screen and (min-width: 1400px) {
+    .filter-form {
+        border-left: .1rem $color-oxford-blue inset;
+        margin-left: 5rem;
+    }   
 }
 
 .car-filter {
@@ -158,4 +174,37 @@ a:hover {
 h5 {
     margin:0;
     padding: 0;
+}
+
+.divider {
+    border: 0;
+    border-bottom: .1rem rgba(0, 0, 0, 0.3);
+    border-style: solid;
+}
+
+.divider-first {
+    margin-top: 1rem;
+    border: 0;
+    border-top: .1rem rgba(0, 0, 0, 0.3);
+    border-bottom: .1rem rgba(0, 0, 0, 0.3);
+    border-radius: 100rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-style: solid;
+}
+
+.divider-last {
+    border: 0;
+    border-bottom: .1rem rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-radius: 2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.car-card-info {
+    background-color: $color-cool-gray;
+    border-left: $color-cool-gray-transparent;
+    border-left-width: 0.2rem;
+    border-left-style: ridge;
 }

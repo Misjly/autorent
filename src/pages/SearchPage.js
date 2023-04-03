@@ -28,7 +28,7 @@ const SearchPage = () => {
                                     <CarList state={{location: locationFilter, carType: carTypeFilter}}/>
                 }
                 </Col> 
-                <Col>
+                <Col className='col-5'>
                     <FilterForm/>
                 </Col>
             </Row>
